@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.parent{
+    /* position: fixed; */
+    background-color: #543a46;
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 100px;
+    letter-spacing: 1px;
+}
+
+li{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+li:hover{
+    color: black;
+    transition-duration: .6s;
+}
+
+.parent h3{
+    text-shadow: 2px 2px 4px;
+    color: white;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+img{
+    width: 80%;
+}
+
+.master{
+    /* background-color: aqua; */
+    padding:50px 30px;
+    display: grid;
+    grid-template-columns: repeat(6,300px);
+    gap: 40px;
+    overflow-x: scroll;
+    margin:20px;
+}
+
+.master::-webkit-scrollbar {
+    display: none;
+}
+
+.slider{
+    padding:20px 30px;
+    background-color: #353b48;
+    border-radius: 10px;
+    box-shadow: 8px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    color: white;
+    text-align: center;
+}
+
+.slider:hover{
+    transform: scale(1.2);
+    transition-duration: 0.8s;
+}
+
+.slider h3{
+    padding-top: 15px;
+}
+
+.slider p{
+    word-spacing: 1px;
+    line-height: 28px;
+}
+
+button.primary{
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.primary.secondary{
+    background-color: transparent;
+}
